@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Styling untuk Link Tambah Barang */
+.link-tambah {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Styling Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan jarak antar border sel */
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Garis pemisah sel */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff; /* Warna biru untuk header tabel */
+    color: white;
+    text-align: center;
+}
+
+/* Styling Gambar agar tidak terlalu besar */
+td img {
+    width: 80px; /* Mengatur lebar gambar */
+    height: auto;
+    display: block; /* Agar centering lebih mudah jika diperlukan */
+    margin: 0 auto;
+}
+
+/* Styling kolom aksi */
+td:last-child {
+    text-align: center;
+    white-space: nowrap; /* Mencegah Ubah dan Hapus turun baris */
+}
+
+/* Styling baris ganjil untuk keterbacaan (opsional) */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* --- Styling Khusus Form (Untuk tambah.php) --- */
+
+.input {
+    /* Mengatur jarak antar baris input */
+    margin-bottom: 15px;
+    padding: 5px 0;
+}
+
+.input label {
+    /* Membuat label memiliki lebar tetap (misalnya 150px) */
+    display: inline-block;
+    width: 150px; 
+    font-weight: bold;
+    /* Penting: Membuat label sejajar dengan input field */
+    vertical-align: middle; 
+}
+
+.input input[type="text"], 
+.input select,
+.input input[type="file"] {
+    /* Mengatur tampilan input teks dan select */
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    /* Untuk input file, atur lebar agar tidak terlalu panjang */
+    width: auto; 
+}
+
+/* Styling untuk tombol simpan */
+.submit input[type="submit"] {
+    /* Menggeser tombol Simpan agar sejajar dengan input field */
+    margin-left: 155px; 
+    padding: 10px 20px;
+    background-color: #007bff; /* Warna biru, seperti pada gambar */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit input[type="submit"]:hover {
+    background-color: #0056b3;
+}
